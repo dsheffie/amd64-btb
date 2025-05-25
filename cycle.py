@@ -5,6 +5,7 @@ import sys
 if __name__ == "__main__":
     n = 2**int(sys.argv[1])
     v = [x for x in range(0, n)]
+    random.seed(9)
     random.shuffle(v)
     arr = []
     for i in range(0,n):
